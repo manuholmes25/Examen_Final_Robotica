@@ -1,0 +1,95 @@
+- ros_topic_name: "/clock"
+  gz_topic_name: "/clock"
+  ros_type_name: "rosgraph_msgs/msg/Clock"
+  gz_type_name: "gz.msgs.Clock"
+  direction: "GZ_TO_ROS"
+
+- ros_topic_name: "/joint_states"
+  gz_topic_name: "/joint_states"
+  ros_type_name: "sensor_msgs/msg/JointState"
+  gz_type_name: "gz.msgs.Model"
+  direction: "GZ_TO_ROS"
+
+- ros_topic_name: "/odom_wheel"
+  gz_topic_name: "/odom_wheel"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  direction: "GZ_TO_ROS"
+
+# TF de odometría de encoders (con drift) - RAMA SEPARADA
+# Publica: odom_wheel_frame -> base_footprint_wheel
+# Esta rama es independiente del árbol principal del robot
+- ros_topic_name: "/tf"
+  gz_topic_name: "/tf_wheel"
+  ros_type_name: "tf2_msgs/msg/TFMessage"
+  gz_type_name: "gz.msgs.Pose_V"
+  direction: "GZ_TO_ROS"
+
+# NOTA: El TF principal (odom_vo_frame->base_footprint) viene del nodo C++ usando ground truth
+# Los TFs de joints (base_link->wheels, etc.) vienen del robot_state_publisher
+
+- ros_topic_name: "/cmd_vel"
+  gz_topic_name: "/cmd_vel"
+  ros_type_name: "geometry_msgs/msg/Twist"
+  gz_type_name: "gz.msgs.Twist"
+  direction: "ROS_TO_GZ"
+
+# LiDAR 3D PointCloud
+- ros_topic_name: "/lidar/points"
+  gz_topic_name: "/lidar/points/points"
+  ros_type_name: "sensor_msgs/msg/PointCloud2"
+  gz_type_name: "gz.msgs.PointCloudPacked"
+  direction: "GZ_TO_ROS"
+
+# Sharp IR Distance Sensor (single ray range sensor)
+# Simulates optical distance sensor like Sharp GP2Y0A02YK0F
+# Tópico en GZ: /sharp_distance (LaserScan)
+- ros_topic_name: "/sharp_distance"
+  gz_topic_name: "/sharp_distance"
+  ros_type_name: "sensor_msgs/msg/LaserScan"
+  gz_type_name: "gz.msgs.LaserScan"
+  direction: "GZ_TO_ROS"
+
+# Sharp IR Distance Sensor - Range (single distance value)
+# Convierte LaserScan a Range para facilidad de uso
+- ros_topic_name: "/sharp_distance/range"
+  gz_topic_name: "/sharp_distance"
+  ros_type_name: "sensor_msgs/msg/Range"
+  gz_type_name: "gz.msgs.LaserScan"
+  direction: "GZ_TO_ROS"
+
+# Stereo Camera - Left Image
+- ros_topic_name: "/camera/left/image_raw"
+  gz_topic_name: "/camera/left"
+  ros_type_name: "sensor_msgs/msg/Image"
+  gz_type_name: "gz.msgs.Image"
+  direction: "GZ_TO_ROS"
+
+# Stereo Camera - Left Camera Info
+- ros_topic_name: "/camera/left/camera_info"
+  gz_topic_name: "/camera/camera_info"
+  ros_type_name: "sensor_msgs/msg/CameraInfo"
+  gz_type_name: "gz.msgs.CameraInfo"
+  direction: "GZ_TO_ROS"
+
+# Stereo Camera - Right Image
+- ros_topic_name: "/camera/right/image_raw"
+  gz_topic_name: "/camera/right"
+  ros_type_name: "sensor_msgs/msg/Image"
+  gz_type_name: "gz.msgs.Image"
+  direction: "GZ_TO_ROS"
+
+# Stereo Camera - Right Camera Info
+- ros_topic_name: "/camera/right/camera_info"
+  gz_topic_name: "/camera/camera_info"
+  ros_type_name: "sensor_msgs/msg/CameraInfo"
+  gz_type_name: "gz.msgs.CameraInfo"
+  direction: "GZ_TO_ROS"
+
+# Ground Truth Poses de todos los modelos (desde el sistema de poses del mundo)
+# Esto publica TF de world->model_name para todos los modelos
+- ros_topic_name: "/tf_ground_truth"
+  gz_topic_name: "/world/default/pose/info"
+  ros_type_name: "tf2_msgs/msg/TFMessage"
+  gz_type_name: "gz.msgs.Pose_V"
+  direction: "GZ_TO_ROS"

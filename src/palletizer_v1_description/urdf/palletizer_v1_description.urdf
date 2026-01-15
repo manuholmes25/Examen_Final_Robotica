@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version:   Build Version: 1.6.9335.19781
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="palletizer_v1_description">
+  <!-- Base footprint: nuevo link raíz para corregir orientación -->
+  <link name="base_footprint"/>
+  
+  <!-- Joint para rotar el robot 90° en eje X (Y apunta arriba) -->
+  <joint name="base_footprint_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="1.5708 0 3.14159"/>
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+  </joint>
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.00333096469273619 0.0083363731202496 -7.05998821604048E-06"
+        rpy="0 0 0" />
+      <mass
+        value="111.552316494755" />
+      <inertia
+        ixx="3.69522354301021"
+        ixy="0.462525500928085"
+        ixz="0.000604195824504181"
+        iyy="7.6849769904481"
+        iyz="0.00101027432345744"
+        izz="6.83677126276043" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://palletizer_v1_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://palletizer_v1_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="wh1_link">
+    <inertial>
+      <origin
+        xyz="4.60624230447237E-06 -1.39017706225937E-06 0.00103861565548169"
+        rpy="0 0 0" />
+      <mass
+        value="1.16963327708568" />
+      <inertia
+        ixx="0.00513758375658071"
+        ixy="-1.06056698976315E-07"
+        ixz="-1.83557767891057E-07"
+        iyy="0.00513721206306172"
+        iyz="4.7327793948233E-08"
+        izz="0.00835667252463106" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://palletizer_v1_description/meshes/wh1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://palletizer_v1_description/meshes/wh1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j1"
+    type="continuous">
+    <origin
+      xyz="-0.14558 -0.19877 0.30516"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wh1_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wh2_link">
+    <inertial>
+      <origin
+        xyz="3.92629332124361E-06 2.78091989348514E-06 0.00103861562500163"
+        rpy="0 0 0" />
+      <mass
+        value="1.16963328379488" />
+      <inertia
+        ixx="0.00513745501205058"
+        ixy="2.06104403776097E-07"
+        ixz="-1.50099635196023E-07"
+        iyy="0.0051373404737964"
+        iyz="-1.15773920222458E-07"
+        izz="0.0083566723858764" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://palletizer_v1_description/meshes/wh2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://palletizer_v1_description/meshes/wh2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j2"
+    type="continuous">
+    <origin
+      xyz="0.30442 -0.19877 0.30516"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wh2_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wh3_link">
+    <inertial>
+      <origin
+        xyz="4.75014823875242E-06 -8.0951322404231E-07 -0.00103893565212637"
+        rpy="0 0 0" />
+      <mass
+        value="1.16955011461694" />
+      <inertia
+        ixx="0.00513730359145455"
+        ixy="-5.71763557375585E-08"
+        ixz="1.88152675229107E-07"
+        iyy="0.00513689131918041"
+        iyz="-2.42130615914316E-08"
+        izz="0.00835611193645973" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://palletizer_v1_description/meshes/wh3_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://palletizer_v1_description/meshes/wh3_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j3"
+    type="continuous">
+    <origin
+      xyz="-0.14558 -0.19877 -0.30484"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wh3_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wh4_link">
+    <inertial>
+      <origin
+        xyz="-2.88859930108742E-06 -3.85683987606106E-06 -0.00103893565213689"
+        rpy="0 0 0" />
+      <mass
+        value="1.16955011461696" />
+      <inertia
+        ixx="0.00513702366989998"
+        ixy="2.00790822605879E-07"
+        ixz="-1.07431126802095E-07"
+        iyy="0.00513717124073298"
+        iyz="-1.56352980378686E-07"
+        izz="0.00835611193645932" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://palletizer_v1_description/meshes/wh4_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://palletizer_v1_description/meshes/wh4_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="j4"
+    type="continuous">
+    <origin
+      xyz="0.30442 -0.19877 -0.30484"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wh4_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="lidar_link">
+    <inertial>
+      <origin
+        xyz="0.0413676083823298 -0.290389579841708 -0.000164679184994299"
+        rpy="0 0 0" />
+      <mass
+        value="0.1" />
+      <inertia
+        ixx="0.001"
+        ixy="0"
+        ixz="0"
+        iyy="0.001"
+        iyz="0"
+        izz="0.001" />
+    </inertial>
+  </link>
+  <joint
+    name="lidar_joint"
+    type="fixed">
+    <origin
+      xyz="-0.044699 0.29873 0.00015762"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lidar_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="camera_link">
+    <inertial>
+      <origin
+        xyz="0.233796640534236 -0.181564953118314 -0.000164679184994243"
+        rpy="0 0 0" />
+      <mass
+        value="0.1" />
+      <inertia
+        ixx="0.001"
+        ixy="0"
+        ixz="0"
+        iyy="0.001"
+        iyz="0"
+        izz="0.001" />
+    </inertial>
+  </link>
+  <joint
+    name="camera_joint"
+    type="fixed">
+    <origin
+      xyz="-0.23713 0.1899 0.00015762"
+      rpy="3.14159 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="camera_link" />
+    <axis xyz="0 0 0" />
+  </joint>
+
+  <!-- ==================== STEREO CAMERA OPTICAL FRAMES ==================== -->
+  
+  <!-- Left camera optical frame -->
+  <link name="camera_left_optical_frame"/>
+  
+  <joint name="camera_left_optical_joint" type="fixed">
+    <!-- Baseline: 6cm to the left -->
+    <origin xyz="0 0 -0.08" rpy="-1.5708 0 -1.5708"/>
+    <parent link="camera_link"/>
+    <child link="camera_left_optical_frame"/>
+  </joint>
+
+  <!-- Right camera optical frame -->
+  <link name="camera_right_optical_frame"/>
+  
+  <joint name="camera_right_optical_joint" type="fixed">
+    <!-- Baseline: 6cm to the right -->
+    <origin xyz="0 0 0.08" rpy="-1.5708 0 -1.5708"/>
+    <parent link="camera_link"/>
+    <child link="camera_right_optical_frame"/>
+  </joint>
+
+  
+  <link
+    name="sensors_link">
+    <inertial>
+      <origin
+        xyz="0.284117008375572 0.0321104201582918 -0.000164679184994299"
+        rpy="0 0 0" />
+      <mass
+        value="0.1" />
+      <inertia
+        ixx="0.001"
+        ixy="0"
+        ixz="0"
+        iyy="0.001"
+        iyz="0"
+        izz="0.001" />
+    </inertial>
+  </link>
+  <joint
+    name="sensors_joint"
+    type="fixed">
+    <origin
+      xyz="-0.28745 -0.023774 0.00015762"
+      rpy="1.5708 0 3.14159" />
+    <parent
+      link="base_link" />
+    <child
+      link="sensors_link" />
+    <axis xyz="0 0 0" />
+  </joint>
+
+  <!-- ==================== GAZEBO PLUGINS ==================== -->
+  
+  <!-- Plugin de control diferencial/skid-steer para 4 ruedas -->
+  <!-- NOTA: La odometría de rueda tiene drift. El TF principal usa ground truth (visual odom). -->
+  <!-- Esta rama TF es independiente: odom_wheel_frame -> base_footprint_wheel -->
+  <gazebo>
+    <plugin filename="gz-sim-diff-drive-system" name="gz::sim::systems::DiffDrive">
+      <!-- Ruedas izquierdas (wh1 y wh3) -->
+      <left_joint>j1</left_joint>
+      <left_joint>j2</left_joint>
+      <!-- Ruedas derechas (wh2 y wh4) -->
+      <right_joint>j3</right_joint>
+      <right_joint>j4</right_joint>
+      <!-- Geometría del robot -->
+      <wheel_separation>0.76</wheel_separation>
+      <wheel_radius>0.107</wheel_radius>
+      <!-- Límites de velocidad -->
+      <max_linear_acceleration>1.5</max_linear_acceleration>
+      <max_angular_acceleration>2.0</max_angular_acceleration>
+      <!-- Topics -->
+      <topic>cmd_vel</topic>
+      <odom_topic>odom_wheel</odom_topic>
+      <!-- TF para wheel odom - RAMA SEPARADA (con drift) -->
+      <tf_topic>tf_wheel</tf_topic>
+      <!-- Frame IDs - Rama independiente del árbol principal -->
+      <frame_id>odom_wheel_frame</frame_id>
+      <child_frame_id>base_footprint_wheel</child_frame_id>
+      <!-- Publicar odometría -->
+      <odom_publish_frequency>50</odom_publish_frequency>
+    </plugin>
+  </gazebo>
+
+  <!-- Plugin para publicar estados de los joints -->
+  <gazebo>
+    <plugin filename="gz-sim-joint-state-publisher-system" name="gz::sim::systems::JointStatePublisher">
+      <joint_name>j1</joint_name>
+      <joint_name>j2</joint_name>
+      <joint_name>j3</joint_name>
+      <joint_name>j4</joint_name>
+      <topic>joint_states</topic>
+      <update_rate>50</update_rate>
+    </plugin>
+  </gazebo>
+
+  <!-- Plugin de sensores - REQUERIDO para que funcionen los sensores como LiDAR -->
+  <gazebo>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+  </gazebo>
+
+  <!-- NOTA: Ground truth pose se obtiene de /world/default/pose/info (siempre disponible) -->
+  <!-- El bridge convierte Pose_V a TFMessage en /tf_ground_truth -->
+
+  <!-- Propiedades de fricción para las ruedas -->
+  <gazebo reference="wh1_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <kp>1000.0</kp>
+    <kd>100.0</kd>
+    <minDepth>0.001</minDepth>
+  </gazebo>
+
+  <gazebo reference="wh2_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <kp>1000.0</kp>
+    <kd>100.0</kd>
+    <minDepth>0.001</minDepth>
+  </gazebo>
+
+  <gazebo reference="wh3_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <kp>1000.0</kp>
+    <kd>100.0</kd>
+    <minDepth>0.001</minDepth>
+  </gazebo>
+
+  <gazebo reference="wh4_link">
+    <mu1>0.5</mu1>
+    <mu2>0.5</mu2>
+    <kp>1000.0</kp>
+    <kd>100.0</kd>
+    <minDepth>0.001</minDepth>
+  </gazebo>
+
+  <!-- Color del cuerpo principal -->
+  <gazebo reference="base_link">
+    <visual>
+      <material>
+        <ambient>0.2 0.2 0.8 1</ambient>
+        <diffuse>0.2 0.2 0.8 1</diffuse>
+      </material>
+    </visual>
+  </gazebo>
+
+  <!-- ==================== LIDAR 3D SENSOR ==================== -->
+  <gazebo reference="lidar_link">
+    <sensor name="lidar_3d" type="gpu_lidar">
+      <pose>0 0 0 0 0 0</pose>
+      <topic>/lidar/points</topic>
+      <update_rate>50</update_rate>
+      <always_on>true</always_on>
+      <visualize>true</visualize>
+      <gz_frame_id>lidar_link</gz_frame_id>
+      
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>360</samples>
+            <resolution>1</resolution>
+            <min_angle>-3.14159</min_angle>
+            <max_angle>3.14159</max_angle>
+          </horizontal>
+          <vertical>
+            <samples>16</samples>
+            <resolution>1</resolution>
+            <min_angle>-0.261799</min_angle>
+            <max_angle>0.261799</max_angle>
+          </vertical>
+        </scan>
+        <range>
+          <min>0.3</min>
+          <max>50.0</max>
+          <resolution>0.001</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.001</stddev>
+        </noise>
+      </ray>
+    </sensor>
+  </gazebo>
+
+  <!-- ==================== SHARP IR DISTANCE SENSOR ==================== -->
+  <!-- Sensor de distancia óptico tipo Sharp GP2Y0A02YK0F -->
+  <!-- Montado en sensors_link, apunta hacia adelante (+X) -->
+  <!-- Rango: 2cm - 150cm, similar a un sensor Sharp real -->
+  <gazebo reference="sensors_link">
+    <sensor name="sharp_distance_sensor" type="gpu_lidar">
+      <!-- Pose relativa al sensors_link: apunta hacia adelante (+X del robot) -->
+      <pose>0 0 0 0 0 0</pose>
+      <topic>/sharp_distance</topic>
+      <update_rate>30</update_rate>
+      <always_on>true</always_on>
+      <visualize>true</visualize>
+      <gz_frame_id>sensors_link</gz_frame_id>
+      
+      <!-- Configuración como sensor de un solo rayo (Sharp IR) -->
+      <ray>
+        <scan>
+          <horizontal>
+            <!-- Un solo rayo central -->
+            <samples>1</samples>
+            <resolution>1</resolution>
+            <min_angle>0</min_angle>
+            <max_angle>0</max_angle>
+          </horizontal>
+          <vertical>
+            <!-- Un solo rayo vertical (sin escaneo vertical) -->
+            <samples>1</samples>
+            <resolution>1</resolution>
+            <min_angle>0</min_angle>
+            <max_angle>0</max_angle>
+          </vertical>
+        </scan>
+        <range>
+          <!-- Rango típico de sensor Sharp GP2Y0A02YK0F -->
+          <min>0.02</min>
+          <max>1.5</max>
+          <resolution>0.001</resolution>
+        </range>
+        <noise>
+          <!-- Ruido gaussiano para simular sensor real -->
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.005</stddev>
+        </noise>
+      </ray>
+    </sensor>
+  </gazebo>
+
+  <!-- ==================== STEREO CAMERA SENSORS ==================== -->
+  
+  <!-- Left Camera Sensor -->
+  <gazebo reference="camera_left_optical_frame">
+    <sensor name="camera_left" type="camera">
+      <pose>0 0 0 0 0 0</pose>
+      <topic>/camera/left</topic>
+      <update_rate>30</update_rate>
+      <always_on>true</always_on>
+      <visualize>true</visualize>
+      <camera>
+        <horizontal_fov>1.3962634</horizontal_fov>
+        <image>
+          <width>640</width>
+          <height>480</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.1</near>
+          <far>100</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+    </sensor>
+  </gazebo>
+
+  <!-- Right Camera Sensor -->
+  <gazebo reference="camera_right_optical_frame">
+    <sensor name="camera_right" type="camera">
+      <pose>0 0 0 0 0 0</pose>
+      <topic>/camera/right</topic>
+      <update_rate>30</update_rate>
+      <always_on>true</always_on>
+      <visualize>true</visualize>
+      <camera>
+        <horizontal_fov>1.3962634</horizontal_fov>
+        <image>
+          <width>640</width>
+          <height>480</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.1</near>
+          <far>100</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+    </sensor>
+  </gazebo>
+
+</robot>
