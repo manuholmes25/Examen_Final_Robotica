@@ -8,15 +8,9 @@ Este repositorio contiene el workspace de ROS2 para la simulacion de un robot us
   ```bash
   sudo apt update
   sudo apt install python3-colcon-common-extensions ros-humble-joint-state-publisher-gui ros-humble-xacro
-
-  #Crear el workspace y clonar
-  mkdir -p ~/palletizer_ws/src
-  cd ~/palletizer_ws/src
-  git clone https://github.com/manuholmes25/Examen_Final_Robotica.git .
-
-  #Instalar dependencias de ROS2
+  
+  #Descargar ZIP del proyecto
   cd ~/palletizer_ws
-  rosdep install --from-paths src --ignore-src -r -y
 
   #Compilar el proyecto
   colcon build
