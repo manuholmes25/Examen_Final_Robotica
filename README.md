@@ -1,6 +1,6 @@
 # Examen_Final_Robotica
 
-Este repositorio contiene el workspace de ROS2 para el sistema de paletizado.
+Este repositorio contiene el workspace de ROS2 para la simulacion de un robot usando ArUcos.
 
 ## Requisitos Previos
 * **Sistema Operativo:** Ubuntu 22.04 LTS.
