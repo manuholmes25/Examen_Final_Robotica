@@ -1,0 +1,977 @@
+04:17:38: Creating resource group General
+04:17:38: Creating resource group Internal
+04:17:38: Creating resource group Autodetect
+04:17:38: SceneManagerFactory for type 'DefaultSceneManager' registered.
+04:17:38: Registering ResourceManager for type Material
+04:17:38: Registering ResourceManager for type Mesh
+04:17:38: Registering ResourceManager for type Mesh2
+04:17:38: Registering ResourceManager for type OldSkeleton
+04:17:38: MovableObjectFactory for type 'ParticleSystem' registered.
+04:17:38: ArchiveFactory for archive type FileSystem registered.
+04:17:38: ArchiveFactory for archive type Zip registered.
+04:17:38: ArchiveFactory for archive type EmbeddedZip registered.
+04:17:38: DDS codec registering
+04:17:38: FreeImage version: 3.18.0
+04:17:38: This program uses FreeImage, a free, open source image library supporting all common bitmap formats. See http://freeimage.sourceforge.net for details
+04:17:38: Supported formats: bmp,ico,jpg,jif,jpeg,jpe,jng,koa,iff,lbm,mng,pbm,pbm,pcd,pcx,pgm,pgm,png,ppm,ppm,ras,tga,targa,tif,tiff,wap,wbmp,wbm,psd,psb,cut,xbm,xpm,gif,hdr,g3,sgi,rgb,rgba,bw,exr,j2k,j2c,jp2,pfm,pct,pict,pic,3fr,arw,bay,bmq,cap,cine,cr2,crw,cs1,dc2,dcr,drf,dsc,dng,erf,fff,ia,iiq,k25,kc2,kdc,mdc,mef,mos,mrw,nef,nrw,orf,pef,ptx,pxn,qtk,raf,raw,rdc,rw2,rwl,rwz,sr2,srf,srw,sti,x3f,webp,jxr,wdp,hdp
+04:17:38: OITD codec registering
+04:17:38: Registering ResourceManager for type HighLevelGpuProgram
+04:17:38: MovableObjectFactory for type 'Decal' registered.
+04:17:38: MovableObjectFactory for type 'InternalCubemapProbe' registered.
+04:17:38: MovableObjectFactory for type 'Entity' registered.
+04:17:38: MovableObjectFactory for type 'Item' registered.
+04:17:38: MovableObjectFactory for type 'Light' registered.
+04:17:38: MovableObjectFactory for type 'Rectangle2Dv2' registered.
+04:17:38: MovableObjectFactory for type 'BillboardSet' registered.
+04:17:38: MovableObjectFactory for type 'ManualObject2' registered.
+04:17:38: MovableObjectFactory for type 'BillboardChain' registered.
+04:17:38: MovableObjectFactory for type 'RibbonTrail' registered.
+04:17:38: MovableObjectFactory for type 'WireAabb' registered.
+04:17:38: *-*-* OGRE Initialising
+04:17:38: *-*-* Version 2.2.5 (Cerberus)
+04:17:38: OverlayElementFactory for type Panel registered.
+04:17:38: OverlayElementFactory for type BorderPanel registered.
+04:17:38: OverlayElementFactory for type TextArea registered.
+04:17:38: Registering ResourceManager for type Font
+04:17:38: Loading library /usr/lib/x86_64-linux-gnu/OGRE-Next/RenderSystem_GL3Plus.so
+04:17:38: Installing plugin: GL 3+ RenderSystem
+04:17:38: OpenGL 3+ Rendering Subsystem created.
+04:17:38: Found Num EGL Devices: 4
+04:17:38: EGL Device: EGL_NV_device_cuda EGL_EXT_device_drm EGL_EXT_device_drm_render_node EGL_EXT_device_query_name EGL_EXT_device_persistent_id #0 /dev/dri/card2
+04:17:38: Trying to init device: EGL_NV_device_cuda EGL_EXT_device_drm EGL_EXT_device_drm_render_node EGL_EXT_device_query_name EGL_EXT_device_persistent_id #0 /dev/dri/card2...
+04:17:38: Created GL 4.5 context for device EGL_NV_device_cuda EGL_EXT_device_drm EGL_EXT_device_drm_render_node EGL_EXT_device_query_name EGL_EXT_device_persistent_id #0 /dev/dri/card2
+04:17:38: Destroying device: EGL_NV_device_cuda EGL_EXT_device_drm EGL_EXT_device_drm_render_node EGL_EXT_device_query_name EGL_EXT_device_persistent_id #0 /dev/dri/card2...
+04:17:38: EGL Device: EGL_EXT_device_drm EGL_EXT_device_drm_render_node #1 /dev/dri/card2
+04:17:38: Trying to init device: EGL_EXT_device_drm EGL_EXT_device_drm_render_node #1 /dev/dri/card2...
+04:17:38: OGRE EXCEPTION(3:RenderingAPIException): eglInitialize failed for device EGL_EXT_device_drm EGL_EXT_device_drm_render_node #1 /dev/dri/card2 in EGLSupport::getGLDisplay at /build/ogre-next-UFfg83/ogre-next-2.2.5+dfsg3/RenderSystems/GL3Plus/src/windowing/EGL/PBuffer/OgreEglPBufferSupport.cpp (line 320)
+04:17:38: OGRE EXCEPTION(3:RenderingAPIException): eglInitialize failed for device EGL_EXT_device_drm EGL_EXT_device_drm_render_node #1 /dev/dri/card2 in EGLSupport::getGLDisplay at /build/ogre-next-UFfg83/ogre-next-2.2.5+dfsg3/RenderSystems/GL3Plus/src/windowing/EGL/PBuffer/OgreEglPBufferSupport.cpp (line 320)
+04:17:38: Destroying device: EGL_EXT_device_drm EGL_EXT_device_drm_render_node #1 /dev/dri/card2...
+04:17:38: EGL Device: EGL_EXT_device_drm EGL_EXT_device_drm_render_node #2 /dev/dri/card1
+04:17:38: Trying to init device: EGL_EXT_device_drm EGL_EXT_device_drm_render_node #2 /dev/dri/card1...
+04:17:38: OGRE EXCEPTION(3:RenderingAPIException): eglInitialize failed for device EGL_EXT_device_drm EGL_EXT_device_drm_render_node #2 /dev/dri/card1 in EGLSupport::getGLDisplay at /build/ogre-next-UFfg83/ogre-next-2.2.5+dfsg3/RenderSystems/GL3Plus/src/windowing/EGL/PBuffer/OgreEglPBufferSupport.cpp (line 320)
+04:17:38: OGRE EXCEPTION(3:RenderingAPIException): eglInitialize failed for device EGL_EXT_device_drm EGL_EXT_device_drm_render_node #2 /dev/dri/card1 in EGLSupport::getGLDisplay at /build/ogre-next-UFfg83/ogre-next-2.2.5+dfsg3/RenderSystems/GL3Plus/src/windowing/EGL/PBuffer/OgreEglPBufferSupport.cpp (line 320)
+04:17:38: Destroying device: EGL_EXT_device_drm EGL_EXT_device_drm_render_node #2 /dev/dri/card1...
+04:17:38: EGL Device: EGL_MESA_device_software EGL_EXT_device_drm_render_node #3
+04:17:38: Trying to init device: EGL_MESA_device_software EGL_EXT_device_drm_render_node #3...
+04:17:38: Created GL 4.5 context for device EGL_MESA_device_software EGL_EXT_device_drm_render_node #3
+04:17:38: Destroying device: EGL_MESA_device_software EGL_EXT_device_drm_render_node #3...
+04:17:38: Plugin successfully installed
+04:17:38: Loading library /usr/lib/x86_64-linux-gnu/OGRE-Next/Plugin_ParticleFX.so
+04:17:38: Installing plugin: ParticleFX
+04:17:38: Particle Emitter Type 'Point' registered
+04:17:38: Particle Emitter Type 'Box' registered
+04:17:38: Particle Emitter Type 'Ellipsoid' registered
+04:17:38: Particle Emitter Type 'Cylinder' registered
+04:17:38: Particle Emitter Type 'Ring' registered
+04:17:38: Particle Emitter Type 'HollowEllipsoid' registered
+04:17:38: Particle Affector Type 'LinearForce' registered
+04:17:38: Particle Affector Type 'ColourFader' registered
+04:17:38: Particle Affector Type 'ColourFader2' registered
+04:17:38: Particle Affector Type 'ColourImage' registered
+04:17:38: Particle Affector Type 'ColourInterpolator' registered
+04:17:38: Particle Affector Type 'Scaler' registered
+04:17:38: Particle Affector Type 'Rotator' registered
+04:17:38: Particle Affector Type 'DirectionRandomiser' registered
+04:17:38: Particle Affector Type 'DeflectorPlane' registered
+04:17:38: Plugin successfully installed
+04:17:38: CPU Identifier & Features
+04:17:38: -------------------------
+04:17:38:  *   CPU ID: GenuineIntel: 13th Gen Intel(R) Core(TM) i9-13950HX
+04:17:38:  *   Logical cores: 32
+04:17:38:  *      SSE: yes
+04:17:38:  *     SSE2: yes
+04:17:38:  *     SSE3: yes
+04:17:38:  *      MMX: yes
+04:17:38:  *   MMXEXT: yes
+04:17:38:  *    3DNOW: no
+04:17:38:  * 3DNOWEXT: no
+04:17:38:  *     CMOV: yes
+04:17:38:  *      TSC: yes
+04:17:38:  *      FPU: yes
+04:17:38:  *      PRO: yes
+04:17:38:  *       HT: no
+04:17:38: -------------------------
+04:17:38: ******************************
+*** Starting GLX Subsystem ***
+******************************
+04:17:38: GL3PlusRenderSystem::_createRenderWindow "OgreWindow(0)_0", 1x1 windowed  miscParams: FSAA=0 border=none contentScalingFactor=1.000000 currentGLContext=true externalGLControl=true gamma=Yes parentWindowHandle=109051938 stereoMode=Frame Sequential 
+04:17:38: GLXWindow::create used FBConfigID = 274
+04:17:38: GL Version = 4.6.0.0
+04:17:38: GL_VERSION = 4.6.0 NVIDIA 580.95.05
+04:17:38: GL_VENDOR = NVIDIA Corporation
+04:17:38: GL_RENDERER = NVIDIA GeForce RTX 4060 Laptop GPU/PCIe/SSE2
+04:17:38: GL_EXTENSIONS = 
+04:17:38: GL_AMD_multi_draw_indirect
+04:17:38: GL_AMD_seamless_cubemap_per_texture
+04:17:38: GL_AMD_vertex_shader_viewport_index
+04:17:38: GL_AMD_vertex_shader_layer
+04:17:38: GL_ARB_arrays_of_arrays
+04:17:38: GL_ARB_base_instance
+04:17:38: GL_ARB_bindless_texture
+04:17:38: GL_ARB_blend_func_extended
+04:17:38: GL_ARB_buffer_storage
+04:17:38: GL_ARB_clear_buffer_object
+04:17:38: GL_ARB_clear_texture
+04:17:38: GL_ARB_clip_control
+04:17:38: GL_ARB_color_buffer_float
+04:17:38: GL_ARB_compatibility
+04:17:38: GL_ARB_compressed_texture_pixel_storage
+04:17:38: GL_ARB_conservative_depth
+04:17:38: GL_ARB_compute_shader
+04:17:38: GL_ARB_compute_variable_group_size
+04:17:38: GL_ARB_conditional_render_inverted
+04:17:38: GL_ARB_copy_buffer
+04:17:38: GL_ARB_copy_image
+04:17:38: GL_ARB_cull_distance
+04:17:38: GL_ARB_debug_output
+04:17:38: GL_ARB_depth_buffer_float
+04:17:38: GL_ARB_depth_clamp
+04:17:38: GL_ARB_depth_texture
+04:17:38: GL_ARB_derivative_control
+04:17:38: GL_ARB_direct_state_access
+04:17:38: GL_ARB_draw_buffers
+04:17:38: GL_ARB_draw_buffers_blend
+04:17:38: GL_ARB_draw_indirect
+04:17:38: GL_ARB_draw_elements_base_vertex
+04:17:38: GL_ARB_draw_instanced
+04:17:38: GL_ARB_enhanced_layouts
+04:17:38: GL_ARB_ES2_compatibility
+04:17:38: GL_ARB_ES3_compatibility
+04:17:38: GL_ARB_ES3_1_compatibility
+04:17:38: GL_ARB_ES3_2_compatibility
+04:17:38: GL_ARB_explicit_attrib_location
+04:17:38: GL_ARB_explicit_uniform_location
+04:17:38: GL_ARB_fragment_coord_conventions
+04:17:38: GL_ARB_fragment_layer_viewport
+04:17:38: GL_ARB_fragment_program
+04:17:38: GL_ARB_fragment_program_shadow
+04:17:38: GL_ARB_fragment_shader
+04:17:38: GL_ARB_fragment_shader_interlock
+04:17:38: GL_ARB_framebuffer_no_attachments
+04:17:38: GL_ARB_framebuffer_object
+04:17:38: GL_ARB_framebuffer_sRGB
+04:17:38: GL_ARB_geometry_shader4
+04:17:38: GL_ARB_get_program_binary
+04:17:38: GL_ARB_get_texture_sub_image
+04:17:38: GL_ARB_gl_spirv
+04:17:38: GL_ARB_gpu_shader5
+04:17:38: GL_ARB_gpu_shader_fp64
+04:17:38: GL_ARB_gpu_shader_int64
+04:17:38: GL_ARB_half_float_pixel
+04:17:38: GL_ARB_half_float_vertex
+04:17:38: GL_ARB_imaging
+04:17:38: GL_ARB_indirect_parameters
+04:17:38: GL_ARB_instanced_arrays
+04:17:38: GL_ARB_internalformat_query
+04:17:38: GL_ARB_internalformat_query2
+04:17:38: GL_ARB_invalidate_subdata
+04:17:38: GL_ARB_map_buffer_alignment
+04:17:38: GL_ARB_map_buffer_range
+04:17:38: GL_ARB_multi_bind
+04:17:38: GL_ARB_multi_draw_indirect
+04:17:38: GL_ARB_multisample
+04:17:38: GL_ARB_multitexture
+04:17:38: GL_ARB_occlusion_query
+04:17:38: GL_ARB_occlusion_query2
+04:17:38: GL_ARB_parallel_shader_compile
+04:17:38: GL_ARB_pipeline_statistics_query
+04:17:38: GL_ARB_pixel_buffer_object
+04:17:38: GL_ARB_point_parameters
+04:17:38: GL_ARB_point_sprite
+04:17:38: GL_ARB_polygon_offset_clamp
+04:17:38: GL_ARB_post_depth_coverage
+04:17:38: GL_ARB_program_interface_query
+04:17:38: GL_ARB_provoking_vertex
+04:17:38: GL_ARB_query_buffer_object
+04:17:38: GL_ARB_robust_buffer_access_behavior
+04:17:38: GL_ARB_robustness
+04:17:38: GL_ARB_sample_locations
+04:17:38: GL_ARB_sample_shading
+04:17:38: GL_ARB_sampler_objects
+04:17:38: GL_ARB_seamless_cube_map
+04:17:38: GL_ARB_seamless_cubemap_per_texture
+04:17:38: GL_ARB_separate_shader_objects
+04:17:38: GL_ARB_shader_atomic_counter_ops
+04:17:38: GL_ARB_shader_atomic_counters
+04:17:38: GL_ARB_shader_ballot
+04:17:38: GL_ARB_shader_bit_encoding
+04:17:38: GL_ARB_shader_clock
+04:17:38: GL_ARB_shader_draw_parameters
+04:17:38: GL_ARB_shader_group_vote
+04:17:38: GL_ARB_shader_image_load_store
+04:17:38: GL_ARB_shader_image_size
+04:17:38: GL_ARB_shader_objects
+04:17:38: GL_ARB_shader_precision
+04:17:38: GL_ARB_shader_storage_buffer_object
+04:17:38: GL_ARB_shader_subroutine
+04:17:38: GL_ARB_shader_texture_image_samples
+04:17:38: GL_ARB_shader_texture_lod
+04:17:38: GL_ARB_shading_language_100
+04:17:38: GL_ARB_shader_viewport_layer_array
+04:17:38: GL_ARB_shading_language_420pack
+04:17:38: GL_ARB_shading_language_include
+04:17:38: GL_ARB_shading_language_packing
+04:17:38: GL_ARB_shadow
+04:17:38: GL_ARB_sparse_buffer
+04:17:38: GL_ARB_sparse_texture
+04:17:38: GL_ARB_sparse_texture2
+04:17:38: GL_ARB_sparse_texture_clamp
+04:17:38: GL_ARB_spirv_extensions
+04:17:38: GL_ARB_stencil_texturing
+04:17:38: GL_ARB_sync
+04:17:38: GL_ARB_tessellation_shader
+04:17:38: GL_ARB_texture_barrier
+04:17:38: GL_ARB_texture_border_clamp
+04:17:38: GL_ARB_texture_buffer_object
+04:17:38: GL_ARB_texture_buffer_object_rgb32
+04:17:38: GL_ARB_texture_buffer_range
+04:17:38: GL_ARB_texture_compression
+04:17:38: GL_ARB_texture_compression_bptc
+04:17:38: GL_ARB_texture_compression_rgtc
+04:17:38: GL_ARB_texture_cube_map
+04:17:38: GL_ARB_texture_cube_map_array
+04:17:38: GL_ARB_texture_env_add
+04:17:38: GL_ARB_texture_env_combine
+04:17:38: GL_ARB_texture_env_crossbar
+04:17:38: GL_ARB_texture_env_dot3
+04:17:38: GL_ARB_texture_filter_anisotropic
+04:17:38: GL_ARB_texture_filter_minmax
+04:17:38: GL_ARB_texture_float
+04:17:38: GL_ARB_texture_gather
+04:17:38: GL_ARB_texture_mirror_clamp_to_edge
+04:17:38: GL_ARB_texture_mirrored_repeat
+04:17:38: GL_ARB_texture_multisample
+04:17:38: GL_ARB_texture_non_power_of_two
+04:17:38: GL_ARB_texture_query_levels
+04:17:38: GL_ARB_texture_query_lod
+04:17:38: GL_ARB_texture_rectangle
+04:17:38: GL_ARB_texture_rg
+04:17:38: GL_ARB_texture_rgb10_a2ui
+04:17:38: GL_ARB_texture_stencil8
+04:17:38: GL_ARB_texture_storage
+04:17:38: GL_ARB_texture_storage_multisample
+04:17:38: GL_ARB_texture_swizzle
+04:17:38: GL_ARB_texture_view
+04:17:38: GL_ARB_timer_query
+04:17:38: GL_ARB_transform_feedback2
+04:17:38: GL_ARB_transform_feedback3
+04:17:38: GL_ARB_transform_feedback_instanced
+04:17:38: GL_ARB_transform_feedback_overflow_query
+04:17:38: GL_ARB_transpose_matrix
+04:17:38: GL_ARB_uniform_buffer_object
+04:17:38: GL_ARB_vertex_array_bgra
+04:17:38: GL_ARB_vertex_array_object
+04:17:38: GL_ARB_vertex_attrib_64bit
+04:17:38: GL_ARB_vertex_attrib_binding
+04:17:38: GL_ARB_vertex_buffer_object
+04:17:38: GL_ARB_vertex_program
+04:17:38: GL_ARB_vertex_shader
+04:17:38: GL_ARB_vertex_type_10f_11f_11f_rev
+04:17:38: GL_ARB_vertex_type_2_10_10_10_rev
+04:17:38: GL_ARB_viewport_array
+04:17:38: GL_ARB_window_pos
+04:17:38: GL_ATI_draw_buffers
+04:17:38: GL_ATI_texture_float
+04:17:38: GL_ATI_texture_mirror_once
+04:17:38: GL_S3_s3tc
+04:17:38: GL_EXT_texture_env_add
+04:17:38: GL_EXT_abgr
+04:17:38: GL_EXT_bgra
+04:17:38: GL_EXT_bindable_uniform
+04:17:38: GL_EXT_blend_color
+04:17:38: GL_EXT_blend_equation_separate
+04:17:38: GL_EXT_blend_func_separate
+04:17:38: GL_EXT_blend_minmax
+04:17:38: GL_EXT_blend_subtract
+04:17:38: GL_EXT_compiled_vertex_array
+04:17:38: GL_EXT_Cg_shader
+04:17:38: GL_EXT_depth_bounds_test
+04:17:38: GL_EXT_direct_state_access
+04:17:38: GL_EXT_draw_buffers2
+04:17:38: GL_EXT_draw_instanced
+04:17:38: GL_EXT_draw_range_elements
+04:17:38: GL_EXT_fog_coord
+04:17:38: GL_EXT_framebuffer_blit
+04:17:38: GL_EXT_framebuffer_multisample
+04:17:38: GL_EXTX_framebuffer_mixed_formats
+04:17:38: GL_EXT_framebuffer_multisample_blit_scaled
+04:17:38: GL_EXT_framebuffer_object
+04:17:38: GL_EXT_framebuffer_sRGB
+04:17:38: GL_EXT_geometry_shader4
+04:17:38: GL_EXT_gpu_program_parameters
+04:17:38: GL_EXT_gpu_shader4
+04:17:38: GL_EXT_multi_draw_arrays
+04:17:38: GL_EXT_multiview_texture_multisample
+04:17:38: GL_EXT_multiview_timer_query
+04:17:38: GL_EXT_packed_depth_stencil
+04:17:38: GL_EXT_packed_float
+04:17:38: GL_EXT_packed_pixels
+04:17:38: GL_EXT_pixel_buffer_object
+04:17:38: GL_EXT_point_parameters
+04:17:38: GL_EXT_polygon_offset_clamp
+04:17:38: GL_EXT_post_depth_coverage
+04:17:38: GL_EXT_provoking_vertex
+04:17:38: GL_EXT_raster_multisample
+04:17:38: GL_EXT_rescale_normal
+04:17:38: GL_EXT_secondary_color
+04:17:38: GL_EXT_separate_shader_objects
+04:17:38: GL_EXT_separate_specular_color
+04:17:38: GL_EXT_shader_image_load_formatted
+04:17:38: GL_EXT_shader_image_load_store
+04:17:38: GL_EXT_shader_integer_mix
+04:17:38: GL_EXT_shadow_funcs
+04:17:38: GL_EXT_sparse_texture2
+04:17:38: GL_EXT_stencil_two_side
+04:17:38: GL_EXT_stencil_wrap
+04:17:38: GL_EXT_texture3D
+04:17:38: GL_EXT_texture_array
+04:17:38: GL_EXT_texture_buffer_object
+04:17:38: GL_EXT_texture_compression_dxt1
+04:17:38: GL_EXT_texture_compression_latc
+04:17:38: GL_EXT_texture_compression_rgtc
+04:17:38: GL_EXT_texture_compression_s3tc
+04:17:38: GL_EXT_texture_cube_map
+04:17:38: GL_EXT_texture_edge_clamp
+04:17:38: GL_EXT_texture_env_combine
+04:17:38: GL_EXT_texture_env_dot3
+04:17:38: GL_EXT_texture_filter_anisotropic
+04:17:38: GL_EXT_texture_filter_minmax
+04:17:38: GL_EXT_texture_integer
+04:17:38: GL_EXT_texture_lod
+04:17:38: GL_EXT_texture_lod_bias
+04:17:38: GL_EXT_texture_mirror_clamp
+04:17:38: GL_EXT_texture_object
+04:17:38: GL_EXT_texture_shadow_lod
+04:17:38: GL_EXT_texture_shared_exponent
+04:17:38: GL_EXT_texture_sRGB
+04:17:38: GL_EXT_texture_sRGB_R8
+04:17:38: GL_EXT_texture_sRGB_decode
+04:17:38: GL_EXT_texture_storage
+04:17:38: GL_EXT_texture_swizzle
+04:17:38: GL_EXT_timer_query
+04:17:38: GL_EXT_transform_feedback2
+04:17:38: GL_EXT_vertex_array
+04:17:38: GL_EXT_vertex_array_bgra
+04:17:38: GL_EXT_vertex_attrib_64bit
+04:17:38: GL_EXT_window_rectangles
+04:17:38: GL_EXT_x11_sync_object
+04:17:38: GL_EXT_import_sync_object
+04:17:38: GL_NV_robustness_video_memory_purge
+04:17:38: GL_IBM_rasterpos_clip
+04:17:38: GL_IBM_texture_mirrored_repeat
+04:17:38: GL_KHR_context_flush_control
+04:17:38: GL_KHR_debug
+04:17:38: GL_EXT_memory_object
+04:17:38: GL_EXT_memory_object_fd
+04:17:38: GL_NV_memory_object_sparse
+04:17:38: GL_KHR_parallel_shader_compile
+04:17:38: GL_KHR_no_error
+04:17:38: GL_KHR_robust_buffer_access_behavior
+04:17:38: GL_KHR_robustness
+04:17:38: GL_EXT_semaphore
+04:17:38: GL_EXT_semaphore_fd
+04:17:38: GL_NV_timeline_semaphore
+04:17:38: GL_KHR_shader_subgroup
+04:17:38: GL_KTX_buffer_region
+04:17:38: GL_NV_alpha_to_coverage_dither_control
+04:17:38: GL_NV_bindless_multi_draw_indirect
+04:17:38: GL_NV_bindless_multi_draw_indirect_count
+04:17:38: GL_NV_bindless_texture
+04:17:38: GL_NV_blend_equation_advanced
+04:17:38: GL_NV_blend_equation_advanced_coherent
+04:17:38: GL_NVX_blend_equation_advanced_multi_draw_buffers
+04:17:38: GL_NV_blend_minmax_factor
+04:17:38: GL_NV_blend_square
+04:17:38: GL_NV_clip_space_w_scaling
+04:17:38: GL_NV_command_list
+04:17:38: GL_NV_compute_program5
+04:17:38: GL_NV_compute_shader_derivatives
+04:17:38: GL_NV_conditional_render
+04:17:38: GL_NV_conservative_raster
+04:17:38: GL_NV_conservative_raster_dilate
+04:17:38: GL_NV_conservative_raster_pre_snap
+04:17:38: GL_NV_conservative_raster_pre_snap_triangles
+04:17:38: GL_NV_conservative_raster_underestimation
+04:17:38: GL_NV_copy_depth_to_color
+04:17:38: GL_NV_copy_image
+04:17:38: GL_NV_depth_buffer_float
+04:17:38: GL_NV_depth_clamp
+04:17:38: GL_NV_draw_texture
+04:17:38: GL_NV_draw_vulkan_image
+04:17:38: GL_NV_ES1_1_compatibility
+04:17:38: GL_NV_ES3_1_compatibility
+04:17:38: GL_NV_explicit_multisample
+04:17:38: GL_NV_feature_query
+04:17:38: GL_NV_fence
+04:17:38: GL_NV_fill_rectangle
+04:17:38: GL_NV_float_buffer
+04:17:38: GL_NV_fog_distance
+04:17:38: GL_NV_fragment_coverage_to_color
+04:17:38: GL_NV_fragment_program
+04:17:38: GL_NV_fragment_program_option
+04:17:38: GL_NV_fragment_program2
+04:17:38: GL_NV_fragment_shader_barycentric
+04:17:38: GL_NV_fragment_shader_interlock
+04:17:38: GL_NV_framebuffer_mixed_samples
+04:17:38: GL_NV_framebuffer_multisample_coverage
+04:17:38: GL_NV_geometry_shader4
+04:17:38: GL_NV_geometry_shader_passthrough
+04:17:38: GL_NV_gpu_program4
+04:17:38: GL_NV_internalformat_sample_query
+04:17:38: GL_NV_gpu_program4_1
+04:17:38: GL_NV_gpu_program5
+04:17:38: GL_NV_gpu_program5_mem_extended
+04:17:38: GL_NV_gpu_program_fp64
+04:17:38: GL_NV_gpu_program_multiview
+04:17:38: GL_NV_gpu_shader5
+04:17:38: GL_NV_half_float
+04:17:38: GL_NV_light_max_exponent
+04:17:38: GL_NV_memory_attachment
+04:17:38: GL_NV_mesh_shader
+04:17:38: GL_NV_multisample_coverage
+04:17:38: GL_NV_multisample_filter_hint
+04:17:38: GL_NV_occlusion_query
+04:17:38: GL_NV_packed_depth_stencil
+04:17:38: GL_NV_parameter_buffer_object
+04:17:38: GL_NV_parameter_buffer_object2
+04:17:38: GL_NV_path_rendering
+04:17:38: GL_NV_path_rendering_shared_edge
+04:17:38: GL_NV_pixel_data_range
+04:17:38: GL_NV_point_sprite
+04:17:38: GL_NV_primitive_restart
+04:17:38: GL_NV_primitive_shading_rate
+04:17:38: GL_NV_query_resource
+04:17:38: GL_NV_query_resource_tag
+04:17:38: GL_NV_register_combiners
+04:17:38: GL_NV_register_combiners2
+04:17:38: GL_NV_representative_fragment_test
+04:17:38: GL_NV_sample_locations
+04:17:38: GL_NV_sample_mask_override_coverage
+04:17:38: GL_NV_scissor_exclusive
+04:17:38: GL_NV_shader_atomic_counters
+04:17:38: GL_NV_shader_atomic_float
+04:17:38: GL_NV_shader_atomic_float64
+04:17:38: GL_NV_shader_atomic_fp16_vector
+04:17:38: GL_NV_shader_atomic_int64
+04:17:38: GL_NV_shader_buffer_load
+04:17:38: GL_NV_shader_storage_buffer_object
+04:17:38: GL_NV_shader_subgroup_partitioned
+04:17:38: GL_NV_shader_texture_footprint
+04:17:38: GL_NV_shading_rate_image
+04:17:38: GL_NV_stereo_view_rendering
+04:17:38: GL_NV_texgen_reflection
+04:17:38: GL_NV_texture_barrier
+04:17:38: GL_NV_texture_compression_vtc
+04:17:38: GL_NV_texture_dirty_tile_map
+04:17:38: GL_NV_texture_env_combine4
+04:17:38: GL_NV_texture_multisample
+04:17:38: GL_NV_texture_rectangle
+04:17:38: GL_NV_texture_rectangle_compressed
+04:17:38: GL_NV_texture_shader
+04:17:38: GL_NV_texture_shader2
+04:17:38: GL_NV_texture_shader3
+04:17:38: GL_NV_transform_feedback
+04:17:38: GL_NV_transform_feedback2
+04:17:38: GL_NV_uniform_buffer_unified_memory
+04:17:38: GL_NV_uniform_buffer_std430_layout
+04:17:38: GL_NV_vdpau_interop
+04:17:38: GL_NV_vdpau_interop2
+04:17:38: GL_NV_vertex_array_range
+04:17:38: GL_NV_vertex_array_range2
+04:17:38: GL_NV_vertex_attrib_integer_64bit
+04:17:38: GL_NV_vertex_buffer_unified_memory
+04:17:38: GL_NV_vertex_program
+04:17:38: GL_NV_vertex_program1_1
+04:17:38: GL_NV_vertex_program2
+04:17:38: GL_NV_vertex_program2_option
+04:17:38: GL_NV_vertex_program3
+04:17:38: GL_NV_viewport_array2
+04:17:38: GL_NV_viewport_swizzle
+04:17:38: GL_NVX_conditional_render
+04:17:38: GL_NV_gpu_multicast
+04:17:38: GL_NVX_progress_fence
+04:17:38: GL_NVX_gpu_memory_info
+04:17:38: GL_NVX_nvenc_interop
+04:17:38: GL_NV_shader_thread_group
+04:17:38: GL_NV_shader_thread_shuffle
+04:17:38: GL_KHR_blend_equation_advanced
+04:17:38: GL_KHR_blend_equation_advanced_coherent
+04:17:38: GL_OVR_multiview
+04:17:38: GL_OVR_multiview2
+04:17:38: GL_SGIS_generate_mipmap
+04:17:38: GL_SGIS_texture_lod
+04:17:38: GL_SGIX_depth_texture
+04:17:38: GL_SGIX_shadow
+04:17:38: GL_SUN_slice_accum
+04:17:38: **************************************
+04:17:38: ***   OpenGL 3+ Renderer Started   ***
+04:17:38: **************************************
+04:17:38: Registering ResourceManager for type GpuProgram
+04:17:38: RenderSystem capabilities
+04:17:38: -------------------------
+04:17:38: RenderSystem Name: OpenGL 3+ Rendering Subsystem
+04:17:38: GPU Vendor: nvidia
+04:17:38: Device Name: NVIDIA GeForce RTX 4060 Laptop GPU/PCIe/SSE2
+04:17:38: Driver Version: 4.6.0.0
+04:17:38:  * Fixed function pipeline: no
+04:17:38:  * Hardware generation of mipmaps: yes
+04:17:38:  * Texture blending: yes
+04:17:38:  * Anisotropic texture filtering: yes
+04:17:38:  * Dot product texture operation: yes
+04:17:38:  * Cube mapping: yes
+04:17:38:  * Hardware stencil buffer: yes
+04:17:38:    - Stencil depth: 8
+04:17:38:    - Two sided stencil support: yes
+04:17:38:    - Wrap stencil values: yes
+04:17:38:  * Hardware vertex / index buffers: yes
+04:17:38:  * 32-bit index buffers: yes
+04:17:38:  * Vertex programs: yes
+04:17:38:  * Number of floating-point constants for vertex programs: 4096
+04:17:38:  * Number of integer constants for vertex programs: 4096
+04:17:38:  * Number of boolean constants for vertex programs: 4096
+04:17:38:  * Fragment programs: yes
+04:17:38:  * Number of floating-point constants for fragment programs: 4096
+04:17:38:  * Number of integer constants for fragment programs: 4096
+04:17:38:  * Number of boolean constants for fragment programs: 4096
+04:17:38:  * Geometry programs: yes
+04:17:38:  * Number of floating-point constants for geometry programs: 2048
+04:17:38:  * Number of integer constants for geometry programs: 2048
+04:17:38:  * Number of boolean constants for geometry programs: 2048
+04:17:38:  * Tessellation Hull programs: yes
+04:17:38:  * Number of floating-point constants for tessellation hull programs: 2048
+04:17:38:  * Number of integer constants for tessellation hull programs: 2048
+04:17:38:  * Number of boolean constants for tessellation hull programs: 2048
+04:17:38:  * Tessellation Domain programs: yes
+04:17:38:  * Number of floating-point constants for tessellation domain programs: 2048
+04:17:38:  * Number of integer constants for tessellation domain programs: 2048
+04:17:38:  * Number of boolean constants for tessellation domain programs: 2048
+04:17:38:  * Compute programs: yes
+04:17:38:  * Number of floating-point constants for compute programs: 2048
+04:17:38:  * Number of integer constants for compute programs: 2048
+04:17:38:  * Number of boolean constants for compute programs: 2048
+04:17:38:  * Supported Shader Profiles: glsl glsl130 glsl140 glsl150 glsl330 glsl400 glsl410 glsl420 glsl430 glsl440
+04:17:38:  * Texture Compression: yes
+04:17:38:    - DXT: yes
+04:17:38:    - VTC: yes
+04:17:38:    - PVRTC: no
+04:17:38:    - ATC: no
+04:17:38:    - ETC1: no
+04:17:38:    - ETC2: yes
+04:17:38:    - BC4/BC5: yes
+04:17:38:    - BC6H/BC7: yes
+04:17:38:    - ASTC: no
+04:17:38:  * Hardware Occlusion Query: yes
+04:17:38:  * User clip planes: yes
+04:17:38:  * VET_UBYTE4 vertex element type: yes
+04:17:38:  * Infinite far plane projection: yes
+04:17:38:  * Hardware render-to-texture: yes
+04:17:38:  * Floating point textures: yes
+04:17:38:  * Non-power-of-two textures: yes
+04:17:38:  * 1d textures: yes
+04:17:38:  * Volume textures: yes
+04:17:38:  * Max Texture resolution (2D) 32768
+04:17:38:  * Max Texture resolution (3D) 16384
+04:17:38:  * Max Texture resolution (Cubemaps) 32768
+04:17:38:  * Multiple Render Targets: 8
+04:17:38:    - With different bit depths: yes
+04:17:38:  * Point Sprites: yes
+04:17:38:  * Extended point parameters: yes
+04:17:38:  * Max Point Size: 189.875
+04:17:38:  * Vertex texture fetch: yes
+04:17:38:  * Number of world matrices: 0
+04:17:38:  * Number of texture units: 16
+04:17:38:  * Stencil buffer depth: 8
+04:17:38:  * Number of vertex blend matrices: 0
+04:17:38:    - Max vertex textures: 32
+04:17:38:    - Vertex textures shared: yes
+04:17:38:  * Render to Vertex Buffer : yes
+04:17:38:  * Hardware Atomic Counters: yes
+04:17:38:  * Compute max threads per threadgroup per axis: 1024, 1024, 64
+04:17:38:  * Compute max threads per threadgroup total: 1024
+04:17:38:  * GL 1.5 without VBO workaround: no
+04:17:38:  * Frame Buffer objects: yes
+04:17:38:  * Frame Buffer objects (ARB extension): no
+04:17:38:  * Frame Buffer objects (ATI extension): no
+04:17:38:  * PBuffer support: no
+04:17:38:  * GL 1.5 without HW-occlusion workaround: no
+04:17:38:  * Vertex Array Objects: yes
+04:17:38:  * Separate shader objects: no
+04:17:38:  * Using Reverse Z: yes
+04:17:38: DefaultWorkQueue('Root') initialising on thread main.
+04:17:38: Particle Renderer Type 'billboard' registered
+04:17:38: Added resource location '/usr/share/ignition/ignition-rendering6/ogre2/media/2.0/scripts/Compositors' of type 'FileSystem' to resource group 'General'
+04:17:38: Added resource location '/usr/share/ignition/ignition-rendering6/ogre2/media/2.0/scripts/materials/Common' of type 'FileSystem' to resource group 'General'
+04:17:38: Added resource location '/usr/share/ignition/ignition-rendering6/ogre2/media/2.0/scripts/materials/Common/GLSL' of type 'FileSystem' to resource group 'General'
+04:17:38: Added resource location '/usr/share/ignition/ignition-rendering6/ogre2/media/2.0/scripts/materials/Common/GLSLES' of type 'FileSystem' to resource group 'General'
+04:17:38: Added resource location '/usr/share/ignition/ignition-rendering6/ogre2/media/2.0/scripts/materials/Terra' of type 'FileSystem' to resource group 'General'
+04:17:38: Added resource location '/usr/share/ignition/ignition-rendering6/ogre2/media/2.0/scripts/materials/Terra/GLSL' of type 'FileSystem' to resource group 'General'
+04:17:38: Added resource location '/usr/share/ignition/ignition-rendering6/ogre2/media' of type 'FileSystem' to resource group 'General'
+04:17:38: Added resource location '/usr/share/ignition/ignition-rendering6/ogre2/media/materials/programs' of type 'FileSystem' to resource group 'General'
+04:17:38: Added resource location '/usr/share/ignition/ignition-rendering6/ogre2/media/materials/programs/GLSL' of type 'FileSystem' to resource group 'General'
+04:17:38: Added resource location '/usr/share/ignition/ignition-rendering6/ogre2/media/materials/programs/Metal' of type 'FileSystem' to resource group 'General'
+04:17:38: Added resource location '/usr/share/ignition/ignition-rendering6/ogre2/media/materials/scripts' of type 'FileSystem' to resource group 'General'
+04:17:38: Added resource location '/usr/share/ignition/ignition-rendering6/ogre2/media/materials/textures' of type 'FileSystem' to resource group 'General'
+04:17:38: Parsing scripts for resource group Autodetect
+04:17:38: Finished parsing scripts for resource group Autodetect
+04:17:38: Creating resources for group Autodetect
+04:17:38: All done
+04:17:38: Parsing scripts for resource group General
+04:17:38: Parsing script Quad.program
+04:17:38: Parsing script DPSM.material
+04:17:38: Parsing script DepthUtils.material
+04:17:38: Parsing script EsmGaussianBlurLogFilter.material
+04:17:38: Parsing script Copyback.material
+04:17:38: Parsing script GpuNormalMapper.material
+04:17:38: Parsing script point_cloud_point.material
+04:17:38: Parsing script picker.material
+04:17:38: Parsing script skybox.material
+04:17:38: Parsing script selection_buffer.material
+04:17:38: Parsing script gpu_rays.material
+04:17:38: Parsing script depth_camera.material
+04:17:38: Parsing script gaussian_noise.material
+04:17:38: Parsing script thermal.material
+04:17:38: Parsing script TerraShadowGenerator.compositor
+04:17:38: Parsing script GpuNormalMapper.compositor
+04:17:38: Parsing script EsmGaussianBlurLogFilter.material.json
+04:17:38: Parsing script Mipmaps.material.json
+04:17:38: Parsing script TerraShadowGenerator.material.json
+04:17:38: Finished parsing scripts for resource group General
+04:17:38: Creating resources for group General
+04:17:38: All done
+04:17:38: Parsing scripts for resource group Internal
+04:17:38: Finished parsing scripts for resource group Internal
+04:17:38: Creating resources for group Internal
+04:17:38: All done
+04:17:38: Added resource location '/usr/share/ignition/ignition-rendering6/media/materials/textures/' of type 'FileSystem' to resource group 'General'
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_RoofB_01/meshes' of type 'FileSystem' to resource group 'General' with recursive option
+04:17:38: Initialising resource group General
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_RoofB_01/meshes/../materials/textures/' of type 'FileSystem' to resource group 'General'
+04:17:38: Can't assign material scene::Material(65410) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_ShelfF_01/meshes' of type 'FileSystem' to resource group 'General' with recursive option
+04:17:38: Initialising resource group General
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_ShelfF_01/meshes/../materials/textures/' of type 'FileSystem' to resource group 'General'
+04:17:38: Texture memory budget exceeded. Stalling GPU.
+04:17:38: Stalling was not enough. Freeing memory.
+04:17:38: Texture memory budget exceeded. Stalling GPU.
+04:17:38: Stalling was not enough. Freeing memory.
+04:17:38: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:17:38: Can't assign material scene::Material(65405) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65404) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65403) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_WallB_01/meshes' of type 'FileSystem' to resource group 'General' with recursive option
+04:17:38: Initialising resource group General
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_WallB_01/meshes/../materials/textures/' of type 'FileSystem' to resource group 'General'
+04:17:38: Can't assign material scene::Material(65394) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_ShelfE_01/meshes' of type 'FileSystem' to resource group 'General' with recursive option
+04:17:38: Initialising resource group General
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_ShelfE_01/meshes/../materials/textures/' of type 'FileSystem' to resource group 'General'
+04:17:38: Can't assign material scene::Material(65389) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65388) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65387) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65386) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65389) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65388) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65387) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65386) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_ShelfD_01/meshes' of type 'FileSystem' to resource group 'General' with recursive option
+04:17:38: Initialising resource group General
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_ShelfD_01/meshes/../materials/textures/' of type 'FileSystem' to resource group 'General'
+04:17:38: Can't assign material scene::Material(65365) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65364) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65363) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65362) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65365) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65364) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65363) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65362) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_GroundB_01/meshes' of type 'FileSystem' to resource group 'General' with recursive option
+04:17:38: Initialising resource group General
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_GroundB_01/meshes/../materials/textures/' of type 'FileSystem' to resource group 'General'
+04:17:38: Texture memory budget exceeded. Stalling GPU.
+04:17:38: Stalling was not enough. Freeing memory.
+04:17:38: Can't assign material scene::Material(65341) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65340) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_Lamp_01/meshes' of type 'FileSystem' to resource group 'General' with recursive option
+04:17:38: Initialising resource group General
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_Lamp_01/meshes/../materials/textures/' of type 'FileSystem' to resource group 'General'
+04:17:38: Can't assign material scene::Material(65333) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_Bucket_01/meshes' of type 'FileSystem' to resource group 'General' with recursive option
+04:17:38: Initialising resource group General
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_Bucket_01/meshes/../materials/textures/' of type 'FileSystem' to resource group 'General'
+04:17:38: Can't assign material scene::Material(65328) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65328) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65328) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_ClutteringA_01/meshes' of type 'FileSystem' to resource group 'General' with recursive option
+04:17:38: Initialising resource group General
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_ClutteringA_01/meshes/../materials/textures/' of type 'FileSystem' to resource group 'General'
+04:17:38: Can't assign material scene::Material(65315) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65314) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65313) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65315) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65314) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65313) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65315) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65314) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65313) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_ClutteringC_01/meshes' of type 'FileSystem' to resource group 'General' with recursive option
+04:17:38: Initialising resource group General
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_ClutteringC_01/meshes/../materials/textures/' of type 'FileSystem' to resource group 'General'
+04:17:38: Can't assign material scene::Material(65288) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65288) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65288) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65288) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65288) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_ClutteringD_01/meshes' of type 'FileSystem' to resource group 'General' with recursive option
+04:17:38: Initialising resource group General
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_ClutteringD_01/meshes/../materials/textures/' of type 'FileSystem' to resource group 'General'
+04:17:38: Texture memory budget exceeded. Stalling GPU.
+04:17:38: Can't assign material scene::Material(65267) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_TrashCanC_01/meshes' of type 'FileSystem' to resource group 'General' with recursive option
+04:17:38: Initialising resource group General
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_TrashCanC_01/meshes/../materials/textures/' of type 'FileSystem' to resource group 'General'
+04:17:38: Can't assign material scene::Material(65262) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_PalletJackB_01/meshes' of type 'FileSystem' to resource group 'General' with recursive option
+04:17:38: Initialising resource group General
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/models/aws_robomaker_warehouse_PalletJackB_01/meshes/../materials/textures/' of type 'FileSystem' to resource group 'General'
+04:17:38: Can't assign material scene::Material(65257) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65256) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: OGRE EXCEPTION(5:ItemIdentityException): Cannot locate an appropriate 2D texture coordinate set for all the vertex data in this mesh to create tangents from.  in Mesh::suggestTangentVectorBuildParams at /build/ogre-next-UFfg83/ogre-next-2.2.5+dfsg3/OgreMain/src/OgreMesh.cpp (line 1881)
+04:17:38: Can't assign material scene::Material(65249) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: OGRE EXCEPTION(5:ItemIdentityException): Cannot locate an appropriate 2D texture coordinate set for all the vertex data in this mesh to create tangents from.  in Mesh::suggestTangentVectorBuildParams at /build/ogre-next-UFfg83/ogre-next-2.2.5+dfsg3/OgreMain/src/OgreMesh.cpp (line 1881)
+04:17:38: Can't assign material scene::Material(65243) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: OGRE EXCEPTION(5:ItemIdentityException): Cannot locate an appropriate 2D texture coordinate set for all the vertex data in this mesh to create tangents from.  in Mesh::suggestTangentVectorBuildParams at /build/ogre-next-UFfg83/ogre-next-2.2.5+dfsg3/OgreMain/src/OgreMesh.cpp (line 1881)
+04:17:38: Can't assign material scene::Material(65237) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: OGRE EXCEPTION(5:ItemIdentityException): Cannot locate an appropriate 2D texture coordinate set for all the vertex data in this mesh to create tangents from.  in Mesh::suggestTangentVectorBuildParams at /build/ogre-next-UFfg83/ogre-next-2.2.5+dfsg3/OgreMain/src/OgreMesh.cpp (line 1881)
+04:17:38: Can't assign material scene::Material(65231) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: OGRE EXCEPTION(5:ItemIdentityException): Cannot locate an appropriate 2D texture coordinate set for all the vertex data in this mesh to create tangents from.  in Mesh::suggestTangentVectorBuildParams at /build/ogre-next-UFfg83/ogre-next-2.2.5+dfsg3/OgreMain/src/OgreMesh.cpp (line 1881)
+04:17:38: Can't assign material scene::Material(65225) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: OGRE EXCEPTION(5:ItemIdentityException): Cannot locate an appropriate 2D texture coordinate set for all the vertex data in this mesh to create tangents from.  in Mesh::suggestTangentVectorBuildParams at /build/ogre-next-UFfg83/ogre-next-2.2.5+dfsg3/OgreMain/src/OgreMesh.cpp (line 1881)
+04:17:38: Can't assign material scene::Material(65219) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/meshes' of type 'FileSystem' to resource group 'General' with recursive option
+04:17:38: Initialising resource group General
+04:17:38: Added resource location '/ros/install/palletizer_v1_description/share/palletizer_v1_description/meshes/' of type 'FileSystem' to resource group 'General'
+04:17:38: Can't assign material scene::Material(65213) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: OGRE EXCEPTION(5:ItemIdentityException): Cannot locate an appropriate 2D texture coordinate set for all the vertex data in this mesh to create tangents from.  in Mesh::suggestTangentVectorBuildParams at /build/ogre-next-UFfg83/ogre-next-2.2.5+dfsg3/OgreMain/src/OgreMesh.cpp (line 1881)
+04:17:38: Can't assign material scene::Material(65208) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: OGRE EXCEPTION(5:ItemIdentityException): Cannot locate an appropriate 2D texture coordinate set for all the vertex data in this mesh to create tangents from.  in Mesh::suggestTangentVectorBuildParams at /build/ogre-next-UFfg83/ogre-next-2.2.5+dfsg3/OgreMain/src/OgreMesh.cpp (line 1881)
+04:17:38: Can't assign material scene::Material(65202) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: OGRE EXCEPTION(5:ItemIdentityException): Cannot locate an appropriate 2D texture coordinate set for all the vertex data in this mesh to create tangents from.  in Mesh::suggestTangentVectorBuildParams at /build/ogre-next-UFfg83/ogre-next-2.2.5+dfsg3/OgreMain/src/OgreMesh.cpp (line 1881)
+04:17:38: Can't assign material scene::Material(65196) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: OGRE EXCEPTION(5:ItemIdentityException): Cannot locate an appropriate 2D texture coordinate set for all the vertex data in this mesh to create tangents from.  in Mesh::suggestTangentVectorBuildParams at /build/ogre-next-UFfg83/ogre-next-2.2.5+dfsg3/OgreMain/src/OgreMesh.cpp (line 1881)
+04:17:38: Can't assign material scene::Material(65190) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: OGRE EXCEPTION(5:ItemIdentityException): Cannot locate an appropriate 2D texture coordinate set for all the vertex data in this mesh to create tangents from.  in Mesh::suggestTangentVectorBuildParams at /build/ogre-next-UFfg83/ogre-next-2.2.5+dfsg3/OgreMain/src/OgreMesh.cpp (line 1881)
+04:17:38: Can't assign material scene::Material(65184) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: OGRE EXCEPTION(5:ItemIdentityException): Cannot locate an appropriate 2D texture coordinate set for all the vertex data in this mesh to create tangents from.  in Mesh::suggestTangentVectorBuildParams at /build/ogre-next-UFfg83/ogre-next-2.2.5+dfsg3/OgreMain/src/OgreMesh.cpp (line 1881)
+04:17:38: Can't assign material scene::Material(65178) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: OGRE EXCEPTION(5:ItemIdentityException): Cannot locate an appropriate 2D texture coordinate set for all the vertex data in this mesh to create tangents from.  in Mesh::suggestTangentVectorBuildParams at /build/ogre-next-UFfg83/ogre-next-2.2.5+dfsg3/OgreMain/src/OgreMesh.cpp (line 1881)
+04:17:38: Can't assign material scene::Material(65172) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: OGRE EXCEPTION(5:ItemIdentityException): Cannot locate an appropriate 2D texture coordinate set for all the vertex data in this mesh to create tangents from.  in Mesh::suggestTangentVectorBuildParams at /build/ogre-next-UFfg83/ogre-next-2.2.5+dfsg3/OgreMain/src/OgreMesh.cpp (line 1881)
+04:17:38: Can't assign material scene::Material(65166) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65219) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65213) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65208) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65202) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65196) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65190) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65184) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65178) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65172) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65166) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65219) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65213) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65208) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65202) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65196) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65190) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65184) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65178) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65172) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: Can't assign material scene::Material(65166) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:38: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:17:38: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:17:38: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:17:39: Can't assign material scene::Material(65060) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:17:40: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:17:40: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:17:40: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:17:40: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:17:40: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:17:41: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:17:41: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:17:41: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:24: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:24: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:25: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:25: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:25: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:25: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:25: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:26: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:26: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:27: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:27: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:28: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:28: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:28: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:29: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:29: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:29: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:29: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:29: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:31: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:31: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:31: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:31: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:32: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:32: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:34: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:34: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:35: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:35: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:36: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:36: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:36: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:19:36: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:20:26: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:20:26: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:20:30: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:20:30: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:20:33: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:20:33: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:20:40: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:20:40: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:20:42: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:20:42: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:20:43: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:20:43: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:20:43: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:20:45: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:20:45: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:20:48: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:20:48: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:20:49: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:20:49: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:20:50: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:20:50: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:20:50: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:21:13: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:21:13: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:08: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:08: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:11: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:11: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:11: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:11: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:11: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:11: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:14: Can't assign material scene::Material(64991) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:14: Can't assign material scene::Material(64987) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:14: Can't assign material scene::Material(64991) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:14: Can't assign material scene::Material(64987) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:14: Can't assign material scene::Material(64991) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:14: Can't assign material scene::Material(64987) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:14: Can't assign material scene::Material(65060) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:14: Can't assign material scene::Material(64991) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:14: Can't assign material scene::Material(64991) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:14: Can't assign material scene::Material(64991) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:14: Can't assign material scene::Material(64956) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:14: Can't assign material scene::Material(64956) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:14: Can't assign material scene::Material(64956) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:14: Can't assign material scene::Material(64946) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:14: Can't assign material scene::Material(64942) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:14: Can't assign material scene::Material(64942) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:14: Can't assign material scene::Material(64942) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:14: Can't assign material scene::Material(64991) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:14: Can't assign material scene::Material(64927) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:14: Can't assign material scene::Material(64991) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:14: Can't assign material scene::Material(64927) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:14: Can't assign material scene::Material(64991) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:14: Can't assign material scene::Material(64927) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:14: Can't assign material scene::Material(64991) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:14: Can't assign material scene::Material(64991) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:14: Can't assign material scene::Material(64991) because this Material does not exist. Have you forgotten to define it in a .material script?
+04:22:16: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:16: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:17: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:17: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:18: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:18: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:24: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:24: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:25: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:25: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:25: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:25: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:25: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:30: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:30: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:30: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:32: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:32: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:39: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:39: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:57: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:22:57: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:24:01: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:24:01: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:24:05: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:24:05: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:24:05: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:24:19: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:24:19: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:24:25: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:24:25: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:25:10: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:25:10: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:25:12: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:25:12: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:25:13: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:25:13: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:25:13: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:25:13: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:25:42: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:25:42: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:25:46: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:25:46: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:25:47: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:25:47: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:25:49: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:25:49: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:25:50: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:25:50: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:25:58: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:25:58: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:25:59: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:25:59: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:25:59: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:25:59: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:00: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:00: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:01: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:01: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:22: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:22: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:23: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:23: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:24: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:24: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:25: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:25: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:25: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:25: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:26: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:26: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:27: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:27: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:27: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:27: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:27: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:27: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:29: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:29: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:29: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:29: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:30: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:30: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:30: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
+04:26:30: WARNING: Deleting mapped buffer without having it unmapped. This is often sign of a resource leak or a bad pattern. Umapping the buffer for you...
